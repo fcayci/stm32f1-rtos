@@ -145,7 +145,7 @@ int main(void)
 	set_system_clock_to_72Mhz();
 
 	// Generate interrupt each 10 ms
-	SysTick_Config(SystemCoreClock/10);
+	SysTick_Config(SystemCoreClock/100);
 
 	// Enable GPIOE clock. Bit 6 in RCC APB2ENR register
 	RCC->APB2ENR |= (1 << 6);
